@@ -24,6 +24,9 @@ pipeline {
             }
         }
         stage("test") {
+            steps {
+                sh mvn clean test
+            }
             when {
                 expression {
                     params.executeTests
