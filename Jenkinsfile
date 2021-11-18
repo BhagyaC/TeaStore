@@ -20,6 +20,7 @@ pipeline {
             steps {
                 script {
                     gv.buildApp()
+                    sh "docker-compose -f ./examples/docker/docker-compose_default.yaml up"
                 }
             }
         }
@@ -32,7 +33,7 @@ pipeline {
             }
             steps {
                 script {
-                    sh 'mvn clean test'
+                    sh "mvn clean test"
                     gv.testApp()
                 }
             }
