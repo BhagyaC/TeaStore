@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     gv.buildApp()
-                    sh "docker-compose -f ./examples/docker/docker-compose_default.yaml up"
+                    
                 }
             }
         }
