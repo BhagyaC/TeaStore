@@ -24,9 +24,7 @@ pipeline {
             }
         }
         stage("test") {
-            steps {
-                sh mvn clean test
-            }
+            
             when {
                 expression {
                     params.executeTests
@@ -34,6 +32,7 @@ pipeline {
             }
             steps {
                 script {
+                    sh 'mvn clean test'
                     gv.testApp()
                 }
             }
