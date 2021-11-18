@@ -52,3 +52,5 @@ For an example of a large-scale TeaStore setup we refer to [Microservices: A Per
 * E. Boza, C. Abad, S. Narayanan, B. Balasubramanian, and M. Jang. 2019. A Case for Performance-Aware Deployment of Containers. In Proceedings of the 5th International Workshop on Container Technologies and Container Clouds (WOC '19). Association for Computing Machinery, New York, NY, USA, 25–30. https://doi.org/10.1145/3366615.3368355
 
 If your paper is missing from this list, open up an issue and we'll add it :)
+
+# test CI
